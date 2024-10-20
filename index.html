@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Health Monitoring System</h1>
+
+        <!-- Search Patients Section -->
+        <div class="search-section">
+            <h2>Search Patients</h2>
+            <input type="text" id="search" placeholder="Enter patient name">
+            <button id="search-btn">Search</button>
+            <div id="search-result"></div> <!-- Result will display here -->
+        </div>
+
+        <!-- Patient Registration Section -->
+        <div class="patient-section">
+            <h2>Patient Registration</h2>
+            <form id="patient-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="number" id="age" placeholder="Age" required>
+                <input type="text" id="health-problem" placeholder="Health Problem" required>
+                <input type="date" id="date" required>
+                <button type="submit" id="save-btn">Save</button>
+
+            </form>
+        </div>
+
+        <!-- Health Alerts Section -->
+        <div class="alerts-section">
+            <h2>Health Alerts</h2>
+            <div id="alerts-list"></div>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button id="theme-toggle">Dark/Light Mode</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+:root {
+    --primary-bg: white;
+    --primary-text: black;
+    --secondary-bg: lightgray;
+}
+
+body.dark {
+    --primary-bg: #2e2e2e;
+    --primary-text: white;
+    --secondary-bg: #555;
+}
+
+body {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input {
+    margin: 10px 0;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* Styles for the Save button */
+#save-btn {
+    padding: 10px 15px;
+    background-color: #007BFF; /* Initial blue color */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#save-btn.green {
+    background-color: green; /* Change to green when saved */
+}
+
+#theme-toggle {
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#theme-toggle:hover {
+    background-color: #0056b3;
+}
+
+#health-alerts {
+    margin-top: 30px;
+}
+
+#alerts-list {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    min-height: 50px;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 35px; /* Adjust for desired spacing */
+    right: 170px; /* Adjust for desired spacing */
+    padding: 10px 15px;
+    background-color: #007BFF; /* Blue background for button */
+    color: white; /* White text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Styles for the Search button */
+#search-btn {
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Icon color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px; /* Padding around the icon */
+    display: inline-flex; /* Align icon in center */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; /* Center the icon horizontally */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Change background color on hover */
+#search-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Icon size adjustments */
+#search-btn i {
+    font-size: 1.2rem; /* Adjust icon size */
+}
